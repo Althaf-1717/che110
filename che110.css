@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+header h1{
+  color: black;
+  padding-bottom :20px ;
+
+}
+
+header nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+}
+.navbar-left{
+    height: 50px;
+    width: 35px;
+}
+
+section {
+    padding: 2em;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form button {
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.logo-image{
+    height: 100px;
+}
+.body{
+    background-color: black;
+    color: white;
+}
+ 
+#calculator, #strategies {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  #calculator h2, #strategies h2 {
+    color: #444;
+  }
+  
+  #calculator input, #calculator button {
+    padding: 10px;
+    margin: 10px 5px 0 0;
+  }
+  
+  #calculator button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #calculator button:hover {
+    background-color: #218838;
+  }
+  
+  #result {
+    margin-top: 10px;
+    font-weight: bold;
+    color:rgb(242, 156, 26)
+  }
+  #home-left{
+    text-align: center;
+  }
+  .topic{
+    text-align: center;
+  }
+  h3{
+    color: #218838;
+  }
+    

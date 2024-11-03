@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Impact of Network Traffic</title>
+    <link rel="stylesheet" href="che110.css">
+</head>
+<body>
+<div class="topic">
+   
+    <header>
+        <div class="navbar">
+            <div class="navbar-left">
+               <img class="logo-image" src="https://res.cloudinary.com/dfwlbu9vl/image/upload/v1730218423/che110_edited_wl3kzc.png" alt="logo here">
+            </div>
+        <h1>Network Traffic & Environment</h1>
+        <nav>
+            <a href="impact1.html">Impact Analysis</a>
+            <a href="strategies1.html">Reduction Strategies</a>
+            <a href="contact1.html">Contact Us</a>
+        </nav>
+       
+    </header>
+   
+
+    <section id="impact">
+        <h2>Environmental Impact Analysis</h2>
+        <p>Explore the environmental impact of network traffic in applications and services...</p>
+        <ul>
+            Video Streaming: High data usage, significant energy costs.<br>
+         Cloud Storage: Emissions from data centers and frequent data transfer.<br>
+           Social Media: Frequent uploads and downloads increase energy demand.<br>
+        </ul>
+    </section>
+
+
+    <section id="RCF">
+        <h2>Strategies to Reduce Carbon Footprint</h2>
+        <ul>
+        Efficient Data Compression<br>
+        Optimize Server Locations<br>
+            Promote Offline Usage<br>
+            Data Usage Awareness Campaigns
+        </ul>
+    </section>
+    <section id="CFC">
+        <h2>Strategies to Reduce the Carbon Footprint of Data Transfer and Storage</h2>
+        <h3> 1. Data Compression and Optimization</h3>
+        <h4>Efficient Compression:</h4> Using advanced compression algorithms can reduce the size of data files, which, in turn, reduces the amount of data that needs to be transferred. This can lower bandwidth and energy use, especially on platforms with high media content.
+        <h4> Lowering Default Video Quality:</h4> Streaming services can set lower default resolutions or optimize video codecs to consume less data while maintaining quality.
+         <h3>2. Optimizing Server Locations</h3>
+         <h3>Local Caching:</h3> Utilizing edge computing and local content delivery networks (CDNs) can store data closer to users, reducing the need for long-distance data transfer.
+         <h3>Green Data Centers:</h3> Building data centers in areas with access to renewable energy sources and cooler climates (which reduces cooling needs) can decrease environmental impact.
+    </section>
+
+    <section id="calculator">
+       <h2>Carbon Footprint Calculator</h2>
+        <p>Enter your data usage to estimate your carbon footprint:</p>
+        <input type="number" id="dataUsage" placeholder="Data usage in MB">
+        <button onclick="calculateFootprint()">Calculate</button>
+        <p id="result"></p>
+      </section>
+</div>
+    
+      <script>
+        function calculateFootprint() {
+    const dataUsage = document.getElementById("dataUsage").value;
+    const CO2_EMISSION_PER_MB = 0.02;  
+    const carbonFootprint = dataUsage * CO2_EMISSION_PER_MB;
+  
+    const result = document.getElementById("result");
+    if (dataUsage && dataUsage > 0) {
+      result.textContent = `Estimated Carbon Footprint: ${carbonFootprint.toFixed(2)} kg CO₂`;
+    } else {
+      result.textContent = "Please enter a valid data usage amount.";
+    }
+  }
+  
+      </script>
+
+   
+
+</body>
+</html>
